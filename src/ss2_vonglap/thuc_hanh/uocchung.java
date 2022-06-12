@@ -13,7 +13,17 @@ import java.util.Scanner;
 public class uocchung {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int a;
         System.out.printf("Nhập a: ");
+        int a = scanner.nextInt();
+        System.out.printf("Nhập b: ");
+        int b = scanner.nextInt();
+        while (a!=b) {
+            if (a>b) {
+                a = a - b;
+            } else {
+                b = b - a;
+            }
+        }
+        System.out.printf("Ước số chung lớn nhất của a, b là: %d",a);
     }
 }
