@@ -3,36 +3,17 @@ package bai_tap;
 import java.util.Scanner;
 
 public class bai2 {
+    final static String ones[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"};
+    final static String twos[] = {" ", " ", " TWENTY", " THIRTY", " FORTY", " FIFTY", " SIXTY", " SEVENTY", " EIGHTY", " NINETY"};
+    private static void numberToWord(int num, String val) {
+        System.out.print(num > 19 ? twos[num / 10] + " " + ones[num % 10] : ones[num]);
+        System.out.print(num > 0 ? val : "");
+    }
     public static void main(String[] args) {
-        System.out.println("Nhập vào số: ");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        String str= "";
-        switch (number) {
-            case 0: str = "Zero";
-                break;
-            case 1: str = "One";
-                break;
-            case 2: str = "Two";
-                break;
-            case 3: str = "Three";
-                break;
-            case 4: str = "For";
-                break;
-            case 5: str = "Five";
-                break;
-            case 6: str = "Six";
-                break;
-            case 7: str = "Seven";
-                break;
-            case 8: str = "Eight";
-                break;
-            case 9: str = "Night";
-                break;
-            case 10: str = "Ten";
-                break;
+        System.out.print("Input a number:");
+        int num = new Scanner(System.in).nextInt();
+        numberToWord(((num / 100) % 10), " HUNDRED AND");
+        numberToWord((num % 100), " ");
 
-        }
-        System.out.println("Đọc là: " +str);
     }
 }
