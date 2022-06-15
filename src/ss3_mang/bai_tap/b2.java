@@ -1,7 +1,7 @@
 package ss3_mang.bai_tap;
 
 import java.util.Scanner;
-
+//[Bài tập] Thêm phần tử vào mảngAssignment
 public class b2 {
     public static void main(String[] args) {
         int [] arr = {10,4,6,7,8,0,0,0,0,0};

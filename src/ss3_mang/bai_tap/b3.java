@@ -1,7 +1,7 @@
 package ss3_mang.bai_tap;
 
 import java.util.Scanner;
-
+//[Bài tập] Gộp mảngAssignment
 public class b3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
