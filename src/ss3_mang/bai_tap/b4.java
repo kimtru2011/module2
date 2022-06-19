@@ -10,8 +10,8 @@ public class b4 {
         System.out.println("Nhập số lượng phần tử của cột: ");
         int col = sc.nextInt();
         int [][] table = new int[row][col];
-        for (int i=0; i<row; i++) {
-            for (int j=0; j<col; j++) {
+        for (int i=0; i<table.length; i++) {
+            for (int j=0; j<table[i].length; j++) {
                 System.out.printf("table[%d][%d] = ",i,j);
                 int value = sc.nextInt();
                 table[i][j] = value;
