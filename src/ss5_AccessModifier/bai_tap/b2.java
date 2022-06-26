@@ -23,6 +23,7 @@ public class b2 {
 
         public static void main(String[] args) {
             Student student = new Student();
+            
             student.setName("Nguyen Van A");
             System.out.println(student.toString());
             student.setClasses("C03");
