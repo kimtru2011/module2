@@ -2,28 +2,20 @@ package ss10_DSAStack.bai_tap;
 
 import java.util.EmptyStackException;
 
-public class MyQueueCricle {
+public class Solution {
     private Node front;
     private Node rear;
     private int numbNodes;
-
-    public MyQueueCircle(){
-        front = rear = null;
-    }
-
     public class Node{
         private int data;
         private Node link;
-
-        public Node(int data) {
+        public Node(int data){
             this.data = data;
         }
-
         public int getData(){
             return this.data;
         }
     }
-
     public void enQueue(int data){
         Node temp = new Node(data);
         if(front == null){
@@ -63,16 +55,16 @@ public class MyQueueCricle {
     }
 
     public static void main(String[] args) {
-        MyQueueCircle myQueueCircle = new MyQueueCircle();
-        myQueueCircle.enQueue(3);
-        myQueueCircle.enQueue(34);
-        myQueueCircle.enQueue(35);
-        myQueueCircle.deQueue();
-        myQueueCircle.enQueue(36);
-        myQueueCircle.enQueue(37);
-        myQueueCircle.deQueue();
-        myQueueCircle.deQueue();
-        myQueueCircle.deQueue();
-        myQueueCircle.displayQueue();
+        Solution solution = new Solution();
+        solution.enQueue(3);
+        solution.enQueue(23);
+        solution.enQueue(31);
+        solution.deQueue();
+        solution.enQueue(314);
+        solution.enQueue(213);
+        solution.deQueue();
+        solution.deQueue();
+        solution.deQueue();
+        solution.displayQueue();
     }
 }
